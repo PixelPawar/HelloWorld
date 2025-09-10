@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                echo 'Hello World'
+                git branch: 'main', credentialsId: '10667098-1d0b-47d7-a51e-08930d9be970', url: 'https://github.com/PixelPawar/HelloWorld.git'
             }
         }
         stage('Compile') {
